@@ -1,0 +1,29 @@
+sources:
+  - name: Wikimedia
+    handler:
+      openapi:
+        source: https://api.apis.guru/v2/specs/wikimedia.org/1.0.0/swagger.yaml
+    transforms:
+      - prefix:
+          value: Wikimedia_
+      - encapsulate:
+          name: wikimedia
+          applyTo:
+            query: true
+            mutation: false
+            subscription: false
+  - name: Healthcare
+    handler:
+      openapi:
+        source: https://api.apis.guru/v2/specs/healthcare.gov/1.0.0/openapi.yaml
+    transforms:
+      - prefix:
+          value: Healthcare_
+      - encapsulate:
+          name: healthcare
+          applyTo:
+            query: true
+            mutation: false
+            subscription: false
+documents:
+  - example-query.graphql

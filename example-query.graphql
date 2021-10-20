@@ -1,0 +1,31 @@
+query currentQuery {
+    healthcare {
+        getApiArticlesMediaTypeExtension(mediaTypeExtension: _JSON) {
+            articles {
+                date
+            }
+        }
+    }
+    wikimedia {
+        getFeedAvailability {
+            inTheNews
+        }
+    }
+}
+
+# query desiredQuery {
+#   nestedType {
+#     healthcare {
+#       getApiArticlesMediaTypeExtension(mediaTypeExtension: _JSON) {
+#         articles {
+#           date
+#         }
+#       }
+#     }
+#     wikimedia {
+#       getFeedAvailability {
+#         inTheNews
+#       }
+#     }
+#   }
+# }

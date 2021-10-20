@@ -1,0 +1,22 @@
+{
+  "name": "question-graphql-mesh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.42.3",
+    "@graphql-mesh/graphql": "^0.18.18",
+    "@graphql-mesh/openapi": "^0.19.2",
+    "@graphql-mesh/transform-encapsulate": "^0.1.66",
+    "@graphql-mesh/transform-filter-schema": "^0.12.1",
+    "@graphql-mesh/transform-prefix": "^0.7.8",
+    "@graphql-mesh/transform-rename": "^0.9.17",
+    "@graphql-mesh/transform-replace-field": "^0.1.1",
+    "graphql": "^15.6.1"
+  }
+}
